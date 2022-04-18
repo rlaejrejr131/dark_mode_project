@@ -4,15 +4,24 @@
 
 *{margin:0;padding:0;font-family: 'Roboto', sans-serif;}
 
-.wrap{height:100VH;background-color:#EDF2FC;position:relative;max-width:1920px;margin:0 auto}
+:root{
+    /* --primary-color:#edf2fc;
+    --secondary-color:#212121; */
+    --primary-color:#000106;
+    --secondary-color:#fff;
+}
+
+.wrap{height:100vh;background-color:var(--primary-color);position:relative;max-width:1920px;margin:0 auto}
 
 header{width:84%;margin:0 auto;padding:20px 0;display:flex;align-items:center;justify-content:space-between;}
 header #logo{width:100px;}
-header nav ul{}
+header nav ul{display:inline-block;}
 header nav ul li{display:inline-block;list-style:none;}
-header nav ul li a{padding:10px 20px;text-decoration:none;color:#6e6e6e}
+header nav ul li a{padding:10px 20px;text-decoration:none;color:var(--secondary-color)}
+header nav .mode_btn{margin-left:40px;display:inline-block;font-size:25px;cursor:pointer;color:var(--secondary-color)}
 
 
-.container{text-align:center;margin-top:200px}
+.container{text-align:center;margin-top:200px;color:var(--secondary-color)}
 .container h2{font-size:80px;}
-.container p{font-size:40px;font-weight:300;margin-top:30px}
+.container p{font-size:40px;font-weight:300;margin:30px 0 80px}
+.container a{font-size:50px;color:var(--secondary-color)}
